@@ -427,7 +427,7 @@ h1{
   margin: rem(-20) 0 0 auto;
   font-size: rem(27);
   @media(max-width: $tablet) {
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
 
   }

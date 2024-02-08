@@ -692,7 +692,7 @@ h1 {
 }
 @media (max-width: 61.99875em) {
   .about-content {
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
   }
 }
