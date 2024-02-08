@@ -278,8 +278,14 @@ h1{
     padding-bottom: 80px;
     .bubbles {
       position: relative;
+      padding-bottom:percentage(math.div(282 , 360));
       .bg {
         display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
       }
     }
   }
