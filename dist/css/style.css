@@ -657,6 +657,11 @@ h1 {
     margin: 0;
   }
 }
+@media (max-width: 61.99875em) {
+  .about-content .title-65 {
+    text-align: center;
+  }
+}
 
 .section-block {
   display: flex;
