@@ -219,11 +219,16 @@ header {
   position: relative;
   z-index: 101;
 }
+@media (min-width: 61.99875em) {
+  header {
+    background-position: center bottom;
+  }
+}
 @media (max-width: 61.99875em) {
   header {
     height: auto;
-    background-image: none;
-    background-color: transparent;
+    background-image: none !important;
+    background-color: transparent !important;
   }
 }
 
@@ -357,12 +362,16 @@ header {
 
 .top-block {
   width: 100%;
-  background-image: url("../img/top-bg-2.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 70.625rem;
+  height: 97.9375rem;
   margin-top: -4.875rem;
+}
+@media (min-width: 61.99875em) {
+  .top-block {
+    background-image: url("../img/top-bg-3.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
 }
 @media (max-width: 61.99875em) {
   .top-block {
@@ -468,9 +477,9 @@ h1 {
 }
 
 .about {
-  background-image: url("../img/about-brand-2.png");
+  background-image: url("../img/about-brand-3.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   height: 72.1875rem;
   margin: -1.5rem auto 0;
@@ -478,6 +487,16 @@ h1 {
   display: flex;
   align-items: center;
   position: relative;
+}
+@media (min-width: 1920px) {
+  .about {
+    min-height: 60vw;
+  }
+}
+@media (min-width: 61.99875em) {
+  .about {
+    margin-top: -25rem;
+  }
 }
 @media (max-width: 61.99875em) {
   .about {
@@ -593,7 +612,7 @@ h1 {
   left: 20.15625%;
   width: 13.28125vw;
   height: 13.28125vw;
-  animation: animateBubble1 8s linear infinite;
+  animation: animateBubble1 12s linear infinite;
 }
 @media (max-width: 61.99875em) {
   .bubble-1 {
@@ -606,7 +625,7 @@ h1 {
   left: 10%;
   width: 6.9270833333vw;
   height: 6.9270833333vw;
-  animation: animateBubble2 10s linear infinite;
+  animation: animateBubble2 15s linear infinite;
 }
 @media (max-width: 61.99875em) {
   .bubble-2 {
@@ -615,7 +634,7 @@ h1 {
   }
 }
 .bubble-3 {
-  animation: animateBubble3 12s cubic-bezier(0.2, 0.3, 0.2, 0.3) infinite;
+  animation: animateBubble3 18s cubic-bezier(0.2, 0.3, 0.2, 0.3) infinite;
   width: 12.8645833333vw;
   height: 12.8645833333vw;
   bottom: 32.9004329004%;
@@ -632,7 +651,7 @@ h1 {
   left: 10%;
   width: 5.46875vw;
   height: 5.46875vw;
-  animation: animateBubble3 6s cubic-bezier(0.2, 0.3, 0.2, 0.3) infinite;
+  animation: animateBubble3 9s cubic-bezier(0.2, 0.3, 0.2, 0.3) infinite;
   animation-direction: alternate, reverse, normal;
 }
 @media (max-width: 61.99875em) {
@@ -646,7 +665,7 @@ h1 {
   bottom: 50%;
   width: 7.4479166667vw;
   height: 7.4479166667vw;
-  animation: animateBubble3 12s cubic-bezier(0.1, 0.3, 0.4, 0.3) infinite;
+  animation: animateBubble3 18s cubic-bezier(0.1, 0.3, 0.4, 0.3) infinite;
 }
 @media (max-width: 61.99875em) {
   .bubble-5 {
@@ -674,10 +693,6 @@ h1 {
 @media (max-width: 61.99875em) {
   .about-content {
     margin: 0;
-  }
-}
-@media (max-width: 61.99875em) {
-  .about-content .title-65 {
     text-align: center;
   }
 }
@@ -745,6 +760,12 @@ h1 {
 #accessories {
   position: relative;
   z-index: 1;
+  background: transparent;
+}
+@media (min-width: 1920px) {
+  #accessories {
+    min-height: 30vw;
+  }
 }
 #accessories:before {
   content: "";
@@ -756,6 +777,13 @@ h1 {
   background-size: cover;
   position: absolute;
   top: -9.9375rem;
+}
+@media (min-width: 1920px) {
+  #accessories:before {
+    background-image: url("../img/vector-top.png");
+    background-position: center top;
+    height: 33vw;
+  }
 }
 @media (max-width: 61.99875em) {
   #accessories:before {
@@ -771,6 +799,12 @@ h1 {
   width: 100%;
   margin-top: -10rem;
 }
+@media (min-width: 1920px) {
+  #accessories .section-pic {
+    opacity: 0;
+    min-height: 30vw;
+  }
+}
 @media (max-width: 61.99875em) {
   #accessories .section-pic {
     margin-top: -50px;
@@ -783,6 +817,11 @@ h1 {
   left: 0;
   top: 0;
 }
+@media (min-width: 1920px) {
+  #accessories .section-pic img {
+    min-height: 30vw;
+  }
+}
 @media (max-width: 61.99875em) {
   #accessories .section-pic img {
     position: relative;
@@ -794,6 +833,7 @@ h1 {
 @media (max-width: 61.99875em) {
   #accessories .section-content {
     margin-top: 0;
+    background: #66C6E2;
   }
 }
 
@@ -960,7 +1000,8 @@ footer {
   display: flex;
   align-items: center;
   font-size: 1.8125rem;
-  padding: 0.875rem 1rem;
+  line-height: 1.3125rem;
+  padding: 0.625rem 1rem 0.875rem;
   border-radius: 15px;
   background: #006BB5;
   margin-top: 10px;
@@ -968,6 +1009,7 @@ footer {
 .footer-buy img {
   margin-right: 10px;
   width: 2.8125rem;
+  margin-bottom: -3px;
 }
 .footer-buy:hover {
   background: #0b82d5;
