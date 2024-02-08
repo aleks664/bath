@@ -435,6 +435,10 @@ h1{
   min-height: 100%;
   flex: 1 0 0;
   max-width: 60%;
+  @media(max-width: $tablet) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
   img{
     height: 100%;
     width: 100%;
