@@ -504,6 +504,9 @@ h1{
 
 .slider-container{
   padding: rem(63) 0 rem(123);
+  @media screen and (max-width: 1550px) and (min-width: 1500px) {
+    margin: 0 100px;
+  }
   @media(max-width: $tablet) {
     padding: 40px 0;
   }
@@ -566,10 +569,12 @@ h1{
 
 .swiper-arrow-left{
   left: rem(-75);
+
 }
 
 .swiper-arrow-right{
   right: rem(-75);
+
 }
 
 .section-block-bg{

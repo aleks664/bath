@@ -779,6 +779,11 @@ h1 {
 .slider-container {
   padding: 3.9375rem 0 7.6875rem;
 }
+@media screen and (max-width: 1550px) and (min-width: 1500px) {
+  .slider-container {
+    margin: 0 100px;
+  }
+}
 @media (max-width: 61.99875em) {
   .slider-container {
     padding: 40px 0;
