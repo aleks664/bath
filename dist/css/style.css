@@ -175,26 +175,34 @@ p + p {
 }
 @media (max-width: 61.99875em) {
   .section-top {
-    background-image: url("../img/section-top-m.png");
-    background-position: center;
-    background-size: cover;
+    background-image: url("../img/top-bg-3.png");
+    background-position: center 150%;
+    background-size: contain;
+    background-repeat: no-repeat;
     padding-bottom: 90%;
     padding-top: 0;
     position: relative;
     margin-bottom: 2px;
   }
   .section-top .header-logo-mobile {
-    visibility: hidden;
-    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    margin-left: 13.5px;
   }
   .section-top header {
     position: absolute;
     top: 0;
   }
   .section-top h1 {
-    visibility: hidden;
-    opacity: 0;
     position: absolute;
+    font-weight: normal;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    font-size: 6vw;
+    white-space: nowrap;
   }
 }
 
@@ -226,8 +234,8 @@ header {
 }
 @media (max-width: 61.99875em) {
   header {
-    height: auto;
-    background-image: none !important;
+    height: 100px;
+    background-position: center bottom;
     background-color: transparent !important;
   }
 }
