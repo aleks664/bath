@@ -1,6 +1,5 @@
 .section-top{
   background: #66C6E2;
-
   margin: 0 auto;
   @media(max-width: $tablet) {
     background-image: url("../img/top-bg-3.png");
@@ -191,11 +190,18 @@ header{
   width: 100%;
   height: rem(1567);
   margin-top: rem(-78);
+
   @media(min-width: $tablet) {
     background-image: url("../img/top-bg-4.png") ;
     background-repeat: no-repeat;
-    background-position: top center;
     background-size: cover;
+    background-position:center;
+    height: rem(1000);
+  }
+  @media(min-width: 1920px) {
+    background-position: top center;
+    height: rem(1567);
+
   }
   @media(max-width: $tablet) {
     margin-top: 0;

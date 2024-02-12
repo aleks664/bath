@@ -377,8 +377,15 @@ header {
   .top-block {
     background-image: url("../img/top-bg-4.png");
     background-repeat: no-repeat;
-    background-position: top center;
     background-size: cover;
+    background-position: center;
+    height: 62.5rem;
+  }
+}
+@media (min-width: 1920px) {
+  .top-block {
+    background-position: top center;
+    height: 97.9375rem;
   }
 }
 @media (max-width: 61.99875em) {
