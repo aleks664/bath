@@ -169,9 +169,18 @@ p + p {
   margin-top: 2.1875rem;
 }
 
+body {
+  background-color: #68C7E0;
+}
+
+.wrapper {
+  max-width: 1920px;
+  background-color: #FFF;
+  margin: 0 auto;
+}
+
 .section-top {
   background: #66C6E2;
-  margin: 0 auto;
 }
 @media (max-width: 61.99875em) {
   .section-top {
@@ -375,17 +384,16 @@ header {
 }
 @media (min-width: 61.99875em) {
   .top-block {
-    background-image: url("../img/top-bg-4.png");
+    background-image: url("../img/top-bg-3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 62.5rem;
+    height: 85.3125rem;
   }
 }
 @media (min-width: 1920px) {
   .top-block {
     background-position: top center;
-    height: 97.9375rem;
   }
 }
 @media (max-width: 61.99875em) {
@@ -503,13 +511,14 @@ h1 {
   align-items: center;
   position: relative;
 }
+@media (min-width: 61.99875em) {
+  .about {
+    margin-top: -28.125rem;
+  }
+}
 @media (min-width: 1920px) {
   .about {
     min-height: 60vw;
-  }
-}
-@media (min-width: 61.99875em) {
-  .about {
     margin-top: -25rem;
   }
 }
@@ -780,7 +789,7 @@ h1 {
 }
 @media (min-width: 1920px) {
   #accessories {
-    min-height: 30vw;
+    min-height: 30vh;
   }
 }
 #accessories:before {
@@ -972,6 +981,8 @@ h1 {
 }
 
 footer {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: #66C6E2;
   background-image: url("../img/footer-bg.png");
   background-repeat: no-repeat;
