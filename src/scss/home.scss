@@ -465,6 +465,7 @@ h1{
   display: flex;
   align-items: center;
   @media(max-width: $tablet) {
+    text-align: center;
     padding: 20px 10px;
     flex-basis: auto;
     margin-top: 20px;
@@ -568,6 +569,8 @@ h1{
 .section-content__block{
   max-width: rem(472);
   @media(max-width: $tablet) {
+    margin-left: auto;
+    margin-right: auto;
     br{
       display: none;
     }
@@ -753,3 +756,24 @@ footer{
     }
   }
 }
+.fancybox {
+  &__viewport {
+    background-color: #FFF;
+
+  }
+  &__toolbar .f-button {
+    &[title=Close] {
+      color: #000!important;
+      background-color: transparent!important;
+    }
+  }
+  &__nav {
+    .f-button {
+      color: #000!important;
+      svg {
+        filter: none!important;
+      }
+    }
+  }
+}
+

@@ -734,6 +734,7 @@ h1 {
 }
 @media (max-width: 61.99875em) {
   .section-content {
+    text-align: center;
     padding: 20px 10px;
     flex-basis: auto;
     margin-top: 20px;
@@ -856,6 +857,10 @@ h1 {
   max-width: 29.5rem;
 }
 @media (max-width: 61.99875em) {
+  .section-content__block {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .section-content__block br {
     display: none;
   }
@@ -1054,6 +1059,20 @@ footer {
 }
 .footer-politic a:hover {
   text-decoration: underline;
+}
+
+.fancybox__viewport {
+  background-color: #FFF;
+}
+.fancybox__toolbar .f-button[title=Close] {
+  color: #000 !important;
+  background-color: transparent !important;
+}
+.fancybox__nav .f-button {
+  color: #000 !important;
+}
+.fancybox__nav .f-button svg {
+  filter: none !important;
 }
 
 :root {
