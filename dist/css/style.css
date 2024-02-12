@@ -176,7 +176,7 @@ p + p {
 @media (max-width: 61.99875em) {
   .section-top {
     background-image: url("../img/top-bg-3.png");
-    background-position: center 150%;
+    background-position: center 100%;
     background-size: contain;
     background-repeat: no-repeat;
     padding-bottom: 90%;
@@ -375,7 +375,7 @@ header {
 }
 @media (min-width: 61.99875em) {
   .top-block {
-    background-image: url("../img/top-bg-3.png");
+    background-image: url("../img/top-bg-4.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
