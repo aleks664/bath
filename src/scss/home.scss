@@ -2,42 +2,21 @@ body {
   background-color: #68C7E0;
 }
 .wrapper {
-  max-width: 1920px;
   background-color: #FFF;
   margin: 0 auto;
 }
 
 .section-top {
   background: #66C6E2;
-  @media(max-width: $tablet) {
-    background-image: url("../img/top-bg-3.png");
-    background-position: center 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-bottom: 90%;
+  @media(max-width: 991px) {
+    z-index: 3;
+    padding-bottom: calc(375/372*100%);;
     padding-top: 0;
     position: relative;
-    margin-bottom: 2px;
-    .header-logo-mobile {
-      position: absolute;
-      left: 50%;
-      top: 0px;
-      transform: translateX(-50%);
-      margin-left: 13.5px;
-    }
+
     header {
       position: absolute;
       top: 0;
-
-    }
-    h1 {
-      position: absolute;
-      font-weight: normal;
-      left: 50%;
-      top: 25%;
-      transform: translateX(-50%);
-      font-size: 6vw;
-      white-space: nowrap;
 
     }
   }
@@ -70,6 +49,7 @@ header {
   }
   @media(max-width: $tablet) {
     height: 100px;
+    height: calc(100/375*100vw);;
     background-position: center bottom;
     background-color: transparent !important;
   }
@@ -106,19 +86,7 @@ header {
   }
 }
 
-.header-logo-mobile {
-  display: none;
-  @media(max-width: $tablet) {
-    display: flex;
-    flex-direction: column;
-    transform: translateY(-20px);
-    flex-basis: 100%;
-    img {
-      max-width: 102px;
-    }
 
-  }
-}
 
 .hamburger {
   display: none;
@@ -203,23 +171,236 @@ header {
 
 .top-block {
   width: 100%;
-  height: rem(1567);
-  margin-top: rem(-78);
+  overflow: hidden;
+  h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 
-  @media(min-width: $tablet) {
-    background-image: url("../img/top-bg-3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: rem(1365);
+    @media (max-width: 1200px) {
+        padding-top: 40px;
+    }
+    @media (max-width: 991px) {
+      top: calc(170/342*100%);
+      padding-top: 0;
+      font-weight: 600;
+      font-size: calc(15/375*100vw);
+      line-height: 113%;
+      text-align: center;
+      color: #006bb5;
+    }
   }
-  @media(min-width: 1920px) {
-    background-position: top center;
+
+  .header-logo-mobile {
+    display: none;
+    @media (max-width: 991px) {
+      display: block;
+      position: absolute;
+      top: calc(39/342*100%);
+      left: calc(134/375*100%);
+      width: calc(131/375*100%);
+      height: calc(118/342*100%);
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
   }
-  @media(max-width: $tablet) {
-    margin-top: 0;
-    background-image: none !important;
-    height: auto;
+  @media (min-width: 992px) {
+    margin-top: rem(-78);
+    padding-top: calc(1365/1920*100%);
+    background-color: #66C7E2;
+    position: relative;
+    h1 {
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 50px;
+      top: 0;
+      line-height: 114%;
+      text-align: center;
+      color: #006bb5;
+
+    }
+
+  }
+  .prod {
+    position: absolute;
+    &.prod-1 {
+      top: calc(74/1365*100%);
+      left: calc(-29/1920*100%);
+      width: calc(483/1920*100%);
+      height: calc(795/1365*100%);
+      @media (max-width: 991px) {
+        top: calc(61/342*100%);
+        left: calc(-21/375*100%);
+        width: calc(98/375*100%);
+        height: calc(160/342*100%);
+      }
+
+    }
+    &.prod-2 {
+      top: calc(275/1365*100%);
+      left: calc(313/1920*100%);
+      width: calc(561/1920*100%);
+      height: calc(852/1365*100%);
+      @media (max-width: 991px) {
+        top: calc(147/342*100%);
+        left: calc(18/375*100%);
+        width: calc(102/375*100%);
+        height: calc(174/342*100%);
+      }
+
+    }
+    &.prod-3 {
+      top: calc((566 - 342)/1365*100%);
+      left: calc(793/1920*100%);
+      width: calc(704/1920*100%);
+      height: calc(710/1365*100%);
+      @media (max-width: 991px) {
+        top: calc(185/342*100%);
+        left: calc(270/375*100%);
+        width: calc(133/375*100%);
+        height: calc(142/342*100%);
+      }
+    }
+    &.prod-4 {
+      top: calc((338 - 342)/1365*100%);
+      left: calc(1310/1920*100%);
+      width: calc(496/1920*100%);
+      height: calc(429/1365*100%);
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+    &.prod-5 {
+      top: calc((1118 - 342)/1365*100%);
+      left: calc(793/1920*100%);
+      width: calc(259/1920*100%);
+      height: calc(254/1365*100%);
+      @media (max-width: 991px) {
+        display: none;
+      }
+
+    }
+    &.prod-6 {
+      top: calc((758 - 342)/1365*100%);
+      left: calc(356/1920*100%);
+      width: calc(227/1920*100%);
+      height: calc(232/1365*100%);
+      @media (max-width: 991px) {
+        top: calc(105/342*100%);
+        left: calc(69/375*100%);
+        width: calc(60/375*100%);
+        height: calc(59/342*100%);
+      }
+    }
+    &.prod-7 {
+      top: calc((967 - 342)/1365*100%);
+      left: calc(1181/1920*100%);
+      width: calc(480/1920*100%);
+      height: calc(555/1365*100%);
+      @media (max-width: 991px) {
+        top: calc(219/342*100%);
+        left: calc(145/375*100%);
+        width: calc(91/375*100%);
+        height: calc(96/342*100%);
+      }
+    }
+    &.prod-8 {
+      top: calc((653 - 342)/1365*100%);
+      left: calc(1401/1920*100%);
+      width: calc(631/1920*100%);
+      height: calc(612/1365*100%);
+      @media (max-width: 991px) {
+        top: calc(79/342*100%);
+        left: calc(265/375*100%);
+        width: calc(138/375*100%);
+        height: calc(136/342*100%);
+      }
+    }
+  }
+  .bubble {
+    position: absolute;
+    &.bubble-1 {
+      top: calc((620 - 342)/1365*100%);
+      left: calc(1162/1920*100%);
+      width: calc(210/1920*100%);
+      height: calc(208/1365*100%);
+      @media (max-width: 991px) {
+        display: none;
+      }
+
+    }
+    &.bubble-2 {
+      top: calc((739 - 342)/1365*100%);
+      left: calc(1827/1920*100%);
+      width: calc(135/1920*100%);
+      height: calc(135/1365*100%);
+      @media (max-width: 991px) {
+        top: calc(185/342*100%);
+        left: calc(319/375*100%);
+        width: calc(37/375*100%);
+        height: calc(37/342*100%);
+      }
+    }
+    &.bubble-3 {
+      top: calc((475 - 342)/1365*100%);
+      left: calc(507/1920*100%);
+      width: calc(60/1920*100%);
+      height: calc(60/1365*100%);
+      @media (max-width: 991px) {
+        top: calc(269/342*100%);
+        left: calc(265/375*100%);
+        width: calc(21/375*100%);
+        height: calc(21/342*100%);
+      }
+    }
+    &.bubble-4 {
+      top: calc((1205 - 342)/1365*100%);
+      left: calc(356/1920*100%);
+      width: calc(60/1920*100%);
+      height: calc(60/1365*100%);
+      @media (max-width: 991px) {
+        top: calc(234/342*100%);
+        left: calc(7/375*100%);
+        width: calc(21/375*100%);
+        height: calc(21/342*100%);
+      }
+    }
+    &.bubble-5 {
+      top: calc((976 - 342)/1365*100%);
+      left: calc(814/1920*100%);
+      width: calc(108/1920*100%);
+      height: calc(106/1365*100%);
+      @media (max-width: 991px) {
+        top: calc(50/342*100%);
+        left: calc(88/375*100%);
+        width: calc(21/375*100%);
+        height: calc(21/342*100%);
+      }
+    }
+    &.bubble-6 {
+      top: calc((923 - 342)/1365*100%);
+      left: calc(265/1920*100%);
+      width: calc(108/1920*100%);
+      height: calc(106/1365*100%);
+      @media (max-width: 991px) {
+        display: none;
+      }
+
+    }
+    &.bubble-7 {
+      top: calc((1141 - 342)/1365*100%);
+      left: calc(-26/1920*100%);
+      width: calc(210/1920*100%);
+      height: calc(208/1365*100%);
+      @media (max-width: 991px) {
+        display: none;
+      }
+
+    }
   }
 }
 
@@ -328,13 +509,12 @@ h1 {
   display: flex;
   align-items: center;
   position: relative;
-  @media(min-width: $tablet) {
-    margin-top: rem(-450);
-  }
-  @media(min-width: 1920px) {
-    min-height: 60vw;
-    margin-top: rem(-400);
 
+  @media(min-width: 992px) {
+    margin-top: calc(-450/1920*100vw);
+  }
+  @media(min-width: 1600px) {
+    margin-top: calc(-300/1920*100vw);
   }
 
   @media(max-width: $tablet) {
@@ -347,7 +527,15 @@ h1 {
     .bubbles {
       position: relative;
       padding-bottom: percentage(math.div(282, 360));
-
+      &:before {
+        content: '';
+        width: 100%;
+        height: 50%;
+        top: -10%;
+        left: 0;
+        position: absolute;
+        background-color: #66C6E2;
+      }
       .bg {
         display: block;
         position: absolute;
@@ -447,7 +635,7 @@ h1 {
   }
 }
 
-.bubble {
+.about .bubble {
   position: absolute;
   z-index: 100;
 
@@ -769,7 +957,6 @@ h1 {
 }
 
 footer {
-  max-width: 1920px;
   margin: 0 auto;
   background-color: #66C6E2;
   background-image: url("../img/footer-bg.png");
