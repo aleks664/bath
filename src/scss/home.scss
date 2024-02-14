@@ -516,6 +516,9 @@ h1 {
   @media(min-width: 1600px) {
     margin-top: calc(-300/1920*100vw);
   }
+  @media(min-width: 1920px) {
+    min-height: calc(1155/1920*100vw);
+  }
 
   @media(max-width: $tablet) {
     display: block;
@@ -779,10 +782,10 @@ h1 {
 #accessories {
   position: relative;
   z-index: 1;
+  background: transparent;
   @media(min-width: 1920px) {
     min-height: 30vh;
   }
-  background: transparent;
 
   &:before {
     content: '';
@@ -815,6 +818,7 @@ h1 {
     @media(min-width: 1920px) {
       opacity: 0;
       min-height: 30vw;
+      margin-bottom: rem(100);
     }
     @media(max-width: $tablet) {
       margin-top: -50px;
@@ -857,7 +861,7 @@ h1 {
 }
 
 .slider-container {
-  padding: rem(63) 0 rem(123);
+  padding: rem(123) 0 rem(123);
   @media screen and (max-width: 1550px) and (min-width: 1500px) {
     margin: 0 100px;
   }
@@ -949,6 +953,7 @@ h1 {
     right: 0;
     background-size: cover;
     @media(max-width: $tablet) {
+      display: none;
       bottom: 0;
       background-position: bottom;
       right: -100px;
