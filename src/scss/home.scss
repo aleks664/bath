@@ -799,20 +799,28 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: rem(637);
     background-size: cover;
     position: absolute;
     top: 0;
+    height: 100%;
     @media(min-width: 1920px) {
       background-image: url("../img/vector-top.png");
       background-position: center top;
       height: 33vw;
+    }
+    @media(min-width: 992px) {
+      width: 118%;
+    }
+      @media(min-width: 1300px) {
+      width: 100%;
+
     }
 
     @media(max-width: $tablet) {
       display: none;
     }
   }
+
 
   .section-pic2 {
     position: relative;
@@ -850,6 +858,11 @@ h1 {
     position: relative;
     @media(min-width: $tablet) {
       padding-top: rem(120);
+      padding-bottom: rem(80);
+    }
+    @media(max-width: $tablet) {
+      margin-top: 0;
+      background: #66C6E2;
     }
     &:after {
       width: 100%;
