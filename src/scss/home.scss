@@ -136,7 +136,8 @@ header {
     border-radius: 10px;
     width: auto;
     height: auto;
-    padding: 5px 10px 10px;
+    padding: 5px 10px 11px;
+    position: relative;
   }
 }
 
@@ -197,7 +198,7 @@ header {
     @media (max-width: 991px) {
       display: block;
       position: absolute;
-      top: calc(39/342*100%);
+      top: calc(18/342*100%);
       left: calc(134/375*100%);
       width: calc(131/375*100%);
       height: calc(118/342*100%);
@@ -419,7 +420,7 @@ h1 {
 }
 
 .header-menu {
-  margin-top: rem(68);
+  margin-top: rem(40);
   @media(max-width: $tablet) {
     position: fixed;
     top: 100px;
@@ -741,6 +742,9 @@ h1 {
   z-index: 1;
   display: flex;
   align-items: center;
+  @media (min-width: $tablet) {
+    flex-basis: 41.9%;
+  }
   @media(max-width: $tablet) {
     text-align: center;
     padding: 20px 10px;
@@ -786,7 +790,9 @@ h1 {
   @media(min-width: 1920px) {
     min-height: 30vh;
   }
-
+  @media(min-width: $tablet) {
+    top: rem(-159);
+  }
   &:before {
     content: '';
     background-image: url("../img/vector-top.svg");
@@ -796,18 +802,19 @@ h1 {
     height: rem(637);
     background-size: cover;
     position: absolute;
-    top: rem(-159);
+    top: 0;
     @media(min-width: 1920px) {
       background-image: url("../img/vector-top.png");
       background-position: center top;
       height: 33vw;
     }
+
     @media(max-width: $tablet) {
       display: none;
     }
   }
 
-  .section-pic {
+  .section-pic2 {
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -839,8 +846,24 @@ h1 {
       }
     }
   }
-
   .section-content {
+    position: relative;
+    @media(min-width: $tablet) {
+      padding-top: rem(120);
+    }
+    &:after {
+      width: 100%;
+      background-color: #68C7E0;
+      content: '';
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  .section-content2 {
     margin-top: rem(-82);
     @media(max-width: $tablet) {
       margin-top: 0;
