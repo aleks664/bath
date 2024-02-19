@@ -127,6 +127,7 @@ header {
   line-height: 1;
   transition: .25s;
   cursor: pointer;
+  position: relative;
 
   &:hover {
     background: #0b82d5;
@@ -791,7 +792,7 @@ h1 {
     min-height: 30vh;
   }
   @media(min-width: $tablet) {
-    top: rem(-159);
+    margin-top: rem(-159);
   }
   &:before {
     content: '';
