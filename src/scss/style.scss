@@ -47,24 +47,7 @@ $mobileSmall: em(479.98); // Телефоны S
 @import "base/null";
 
 body {
-  &::-webkit-scrollbar {
-    height: 5px;
-    width: 5px;
-  }
-  &::-webkit-scrollbar-track {
-    background: #b9dee8;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: #66C6E2;
-  }
-  // Скролл заблокирован
-  .lock & {
-    overflow: hidden;
-    touch-action: none;
-  }
-  // Сайт загружен
-  .loaded & {
-  }
+
 }
 ::selection {
   //   background: green;
@@ -87,7 +70,7 @@ body {
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
 
 /*
-(i) Стили будут применяться ко 
+(i) Стили будут применяться ко
 всем классам содержащим *__container
 Например header__container, main__container и т.д.
 Снипет (HTML): cnt

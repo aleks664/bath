@@ -127,20 +127,6 @@ h6 {
   font-size: inherit;
 }
 
-body::-webkit-scrollbar {
-  height: 5px;
-  width: 5px;
-}
-body::-webkit-scrollbar-track {
-  background: #b9dee8;
-}
-body::-webkit-scrollbar-thumb {
-  background: #66C6E2;
-}
-.lock body {
-  overflow: hidden;
-  touch-action: none;
-}
 .wrapper {
   min-height: 100%;
 }
@@ -152,7 +138,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*
-(i) Стили будут применяться ко 
+(i) Стили будут применяться ко
 всем классам содержащим *__container
 Например header__container, main__container и т.д.
 Снипет (HTML): cnt
@@ -381,7 +367,7 @@ header {
     display: block;
     position: absolute;
     top: 5.2631578947%;
-    left: 35.7333333333%;
+    left: 37.8%;
     width: 34.9333333333%;
     height: 34.5029239766%;
   }
